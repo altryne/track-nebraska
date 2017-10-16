@@ -2,8 +2,12 @@
 
 language: node
 
-#services:
-#  - docker
+services:
+  - docker
+
+before_install:
+- docker pull cypress/internal:cy
+- docker run cypress/internal:cy /bin/sh -c "cypress run"
 
 script:
   - npm install
