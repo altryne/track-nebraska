@@ -1,2 +1,10 @@
+#sudo: required
+
+language: node
+
+#services:
+#  - docker
+
 script:
-  - cypress run --record
+  - npm install
+  - node_modules/.bin/cypress run
