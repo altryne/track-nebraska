@@ -7,7 +7,7 @@ services:
 
 before_install:
 - docker pull cypress/base
-- docker run cypress/base /bin/sh -c "cypress run"
+- docker run cypress/base /bin/sh -c "npm install cypress; cypress run"
 #
 #script:
 #  - npm install
