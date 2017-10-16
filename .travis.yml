@@ -6,8 +6,8 @@ services:
   - docker
 
 before_install:
-- docker pull cypress/internal:cy
-- docker run cypress/internal:cy /bin/sh -c "cypress run"
+- docker pull cypress/internal:6
+- docker run cypress/internal:6 /bin/sh -c "cypress run"
 #
 #script:
 #  - npm install
